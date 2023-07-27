@@ -49,7 +49,7 @@
                         <div class="row m-0 p-0">
                             <div class="col-md-4 pt-2 pb-2">
                                 <label for="card" class="form-label">Card #</label>
-                                <input type="text" class="form-control" id="card" placeholder="xxxxxxxxxxxxxxx">
+                                <input type="text" class="form-control" id="card" placeholder="xxxxxxxx">
                             </div>
                             <div class="col-md-4 pt-2 pb-2">
                                 <label for="cvc" class="form-label">CVC #</label>
@@ -63,66 +63,70 @@
                                 </div>
                             </div>                            
                         </div>
-            
+
                         <div class="row m-0 p-0">
-                            <div class="col-md-6">
-                                <div class="col-md-12 pt-2 pb-2">
-                                    <label for="inputCity" class="form-label">First Name</label>
-                                    <input type="text" class="form-control" id="first-name">
-                                </div>
-                                <div class="col-md-12 pt-2 pb-2">
-                                    <label for="inputCity" class="form-label">City</label>
-                                    <input type="text" class="form-control" id="city">
-                                </div>
-                                <div class="col-md-6 mt-3 pt-2 pb-2">
-                                    <label for="inputCity" class="form-label">We Accept:</label>
-                                    <br>
-                                    <div class="d-flex bg-secondary p-2 align-items-center justify-content-center rounded">
-                                        <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" checked>
-                                            <i class="fa-brands fa-cc-visa" style="color: #ffffff;"></i>
-                                        </div>
-                                        <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                                            <i class="fa-brands fa-cc-mastercard" style="color: #ffffff;"></i>
-                                        </div>
-                                        <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                                            <i class="fa-solid fa-money-check-dollar" style="color: #ffffff;"></i>
-                                        </div>
-                                        <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                                            <i class="fa-solid fa-money-check" style="color: #ffffff;"></i>
-                                        </div>
+                            <div class="col-md-6 pt-2 pb-2">
+                                <label for="inputCity" class="form-label">First Name</label>
+                                <input type="text" class="form-control" id="first-name">
+                            </div>
+
+                            <div class="col-md-6 pt-2 pb-2">
+                                <label for="inputCity" class="form-label">Last Name</label>
+                                <input type="text" class="form-control" id="last-name">
+                            </div>
+                        </div>
+
+                        <div class="row m-0 p-0">
+                            <div class="col-md-6 pt-2 pb-2">
+                                <label for="inputCity" class="form-label">City</label>
+                                <input type="text" class="form-control" id="city">
+                            </div>
+
+                            <div class="col-md-3 pt-2 pb-2">
+                                <label for="inputCity" class="form-label">State</label>
+                                <select id="state" class="form-select">
+                                    <option selected disabled value="Please select an option">Please select an option</option>
+                                    <option>Texas</option>
+                                </select>
+                            </div>
+          
+                            <div class="col-md-3 pt-2 pb-2">
+                                <label for="inputCity" class="form-label">Postal Code</label>
+                                <input type="text" class="form-control" id="post-code">
+                            </div>
+                        </div>
+
+                        <div class="row m-0 p-0">
+
+                            <div class="col-md-6 mt-3 pt-2 pb-2">
+                                <label for="inputCity" class="form-label">We Accept:</label>
+                                <br>
+                                <div class="d-flex bg-secondary p-2 align-items-center justify-content-center rounded" style="width: 300px;">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" checked>
+                                        <i class="fa-brands fa-cc-visa" style="color: #ffffff;"></i>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                        <i class="fa-brands fa-cc-mastercard" style="color: #ffffff;"></i>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                        <i class="fa-solid fa-money-check-dollar" style="color: #ffffff;"></i>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                        <i class="fa-solid fa-money-check" style="color: #ffffff;"></i>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-6">
-                                <div class="col-md-12 pt-2 pb-2">
-                                    <label for="inputCity" class="form-label">Last Name</label>
-                                    <input type="text" class="form-control" id="last-name">
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-6 pt-2 pb-2">
-                                        <label for="inputCity" class="form-label">State</label>
-                                        <select id="state" class="form-select">
-                                            <option selected disabled value="Please select an option">Please select an option</option>
-                                            <option>Texas</option>
-                                        </select>
-                                    </div>
-                
-                                    <div class="col-md-6 pt-2 pb-2">
-                                        <label for="inputCity" class="form-label">Postal Code</label>
-                                        <input type="text" class="form-control" id="post-code">
-                                    </div>
-                                </div>
-                
-                                <div class="col-md-12 pt-2 pb-2">
-                                    <label for="inputCity" class="form-label">Message</label>
-                                    <textarea class="form-control" name="composeContent" id="message" row="7"></textarea>
-                                    <p class="card-text"><small class="text-muted">Add any notes here</small></p>
-                                </div>
+
+                            <div class="col-md-6 pt-2 pb-2">
+                                <label for="inputCity" class="form-label">Message</label>
+                                <textarea class="form-control" name="composeContent" id="message" row="7"></textarea>
+                                <p class="card-text"><small class="text-muted">Add any notes here</small></p>
                             </div>
+
                         </div>
                     </div>
 

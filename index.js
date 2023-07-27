@@ -48,13 +48,11 @@ window.onload = function () {
 
         for (error of errors){
             if (!error){
-                console.log("no good");
                 document.getElementById("validation-message").style.display = "block";
                 return;
             }
         }
 
-        console.log("all good");
         document.getElementById("validation-message").style.display = "none";
         //if all good, send the request
         form.submit();
@@ -67,18 +65,24 @@ function checkCard(elem) {
 }
 
 function checkAmount(elem) {
-    if (!changeBackgroundColur(checkValidityOfText(elem, "number", 3, 10), elem)) {
-        return false
+    
+    // Remove commas from the input value before parsing as a float
+    elem.value = elem.value.replace(/,/g, '');
+
+    //parse to float to retain dollar formatting
+    elem.value = parseFloat(elem.value);
+    
+    if (!changeBackgroundColur(checkValidityOfText(elem, "number", 1, 10), elem)) {
+        return false;
     };
 
     // Format the price above to USD using the locale, style, and currency.
     let USDollar = new Intl.NumberFormat('en-US', {
-        style: 'currency',
-        currency: 'USD',
+        style: 'decimal',
     });
 
     try {
-        USDollar.format(elem.value);
+        elem.value = USDollar.format(elem.value);
     }
 
     catch (err) {
@@ -124,7 +128,6 @@ function checkValidityOfText(elem, dataType, minCharLength, maxCharLength) {
     }
 
     if (typeof value != dataType || elem.value.length < minCharLength ||  elem.value.length <= 0 || elem.value.length > maxCharLength || elem.value === undefined || elem.value === null) {
-        console.log("boo");
         return false;
     }
 
